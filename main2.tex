@@ -156,6 +156,13 @@ The Composite task asks which side of a divider contains more red circles among 
 \paragraph{Counterfactual Pairs.}
 For mechanistic comparisons, matched counterfactual pairs vary an answer-determining visual property while preserving the scene context \citep{gardner2020evaluating,bitton2021automatic}. Feature Binding, Numerosity, and Spatial Relations use separate single-image and intervention-pair datasets, while Amodal Completion and Composite are built as paired datasets. They supply matched contrasts and donor--receiver examples for state interventions, with one pair per task in Figure~\ref{fig:dataset_examples}. Construction, control conditions, and splits are in Appendix~\ref{app:data_generation}.
 
+\begin{figure}[t]
+    \centering
+    \includegraphics[width=0.92\textwidth]{figures/Controlled visual tasks.pdf}
+    \caption{Each controlled task isolates one answer-determining visual variable. Every column shows a counterfactual pair in which the task-relevant variable and the correct answer change together while the remaining scene content is preserved.}
+    \label{fig:dataset_examples}
+\end{figure}
+
 \subsection{Availability of Visual Primitives Without Reasoning}
 \label{sec:answer_ready_states}
 
@@ -531,14 +538,6 @@ We studied how visual judgments support composite answers in VLMs. Component abi
 \label{app:data_generation}
 
 Table~\ref{tab:dataset_splits} summarizes the synthetic datasets and their analysis splits.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.92\textwidth]{figures/Controlled visual tasks.pdf}
-    \caption{\textbf{Each controlled task isolates one answer-determining visual variable.} Every column shows a counterfactual pair in which the task-relevant variable and the correct answer change together while the remaining scene content is preserved.}
-    \label{fig:dataset_examples}
-\end{figure}
-
 
 \begin{table}[H]
     \centering
